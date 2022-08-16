@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class bos {
+    public static void main(String[] args) {
+        int a, b, c, d, e, avg = 0, upp = 0;
+        Scanner bjk = new Scanner(System.in);
+        System.out.println("enter the value of a :");
+        a = bjk.nextInt();
+
+        if (0 <= a && a <= 100) {
+            upp = upp + 1;
+            avg = avg + a;
+        }
+
+        System.out.println("enter the value of b :");
+        b = bjk.nextInt();
+
+        if (0 <= b && b <= 100) {
+            upp = upp + 1;
+            avg = avg + b;
+        }
+
+        System.out.println("enter the value of c :");
+        c = bjk.nextInt();
+
+        if (0 <= c && c <= 100) {
+            upp = upp + 1;
+            avg = avg + c;
+        }
+
+        //System.out.println(avg/upp);
+
+
+        System.out.println("enter the value of d :");
+        d = bjk.nextInt();
+
+        if (0 <= d && d <= 100) {
+            upp = upp + 1;
+            avg = avg + d;
+        }
+
+
+        System.out.println("enter the value of e :");
+        e = bjk.nextInt();
+
+        if (0 <= e && e <= 100) {
+            upp = upp + 1;
+            avg = avg + e;
+        }
+
+
+        System.out.println("average is : " + avg / upp);
+        if (avg / upp <= 55) {
+            System.out.println("you can't pass ");
+        } else {
+            System.out.println("Congrulations  ");
+        }
+
+
+
+
+
+    }
+}
